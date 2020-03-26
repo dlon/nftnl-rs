@@ -17,6 +17,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
+## [0.3.0] - 2020-03-26
+### Added
+- Add `ChainType` and allow setting a chain to either filter, route or nat type.
+- Add support for reading and setting marks in the `Meta` and `Conntrack` expressions.
+- Add support for reading the cgroup via the `Meta` expression.
+- Add `Immediate` expression type that can load data into the registers.
+
+### Changed
+- Change `get_tables_nlmsg` to include all tables, not only inet tables,
+  but also arp, ip, ip6, bridge etc.
+
+
 ## [0.2.1] - 2019-09-23
 ### Added
 - Add support for checking ICMPv6 header fields.
